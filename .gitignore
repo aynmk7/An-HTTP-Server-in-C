@@ -1,0 +1,5 @@
+spidey
+*.o
+*.log
+*.input
+core
