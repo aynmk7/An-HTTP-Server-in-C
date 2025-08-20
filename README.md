@@ -13,14 +13,14 @@ A compact HTTP/1.0 server implemented in C with POSIX sockets, showcasing networ
 
 Testing
 -------
-1) download all files
-2) type make in main directory
-3) run:
+1) Clone the repo
+2) Type 'make' in main directory
+3) Run:
    - ./httpServer -r ./www -- single process, default port is 9898 with root www/
    - ./httpServer -p __8080__ -c __forking__ -r ./www -- customizable port and forking
 4) In another terminal:
-   - you may test with curl or other commands to see its response
-   - for example:
+   - You may test with curl or other commands to see its response
+   - For example:
        - curl -i http://localhost:9898/  -- directory listing (browse handler)
        - curl -i http://localhost:9898/html/index.html  -- static files
        - chmod +x www/scripts/*.sh && curl -i 'http://localhost:9898/scripts/env.sh'  -- cgi scripts (must make sure they are executable)
